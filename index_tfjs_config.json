@@ -23,7 +23,7 @@
         "NonMaxSuppressionV3"
     ],
     "backends": [
-        "wasm"
+        "webgl"
     ],
     "models": [
         "./model.json"

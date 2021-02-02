@@ -17,9 +17,7 @@
 
 import * as blazeface from '@tensorflow-models/blazeface';
 import * as tf from '@tensorflow/tfjs-core';
-import * as tfjsWasm from '@tensorflow/tfjs-backend-wasm';
-
-tfjsWasm.setWasmPath('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@latest/dist/tfjs-backend-wasm.wasm');
+import '@tensorflow/tfjs-backend-webgl';
 
 const stats = new Stats();
 stats.showPanel(0);
@@ -28,11 +26,11 @@ document.body.prepend(stats.domElement);
 let model, ctx, videoWidth, videoHeight, video, canvas;
 
 const state = {
-  backend: 'wasm'
+  backend: 'webgl'
 };
 
 const gui = new dat.GUI();
-gui.add(state, 'backend', ['wasm', 'webgl', 'cpu']).onChange(async backend => {
+gui.add(state, 'backend', ['webgl', 'cpu']).onChange(async backend => {
   await tf.setBackend(backend);
 });
 
