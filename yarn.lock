@@ -69,7 +69,7 @@
   resolved "https://registry.yarnpkg.com/@tensorflow-models/blazeface/-/blazeface-0.0.6.tgz#dd17e9c1a8accc1be1af7fc5e640ea3b40ed8568"
   integrity sha512-KIoratAtRymLk1G7b1yorwmHa5R4wMOJc8q9g98bhin0AFbt9Q+Iv7c1raHqAAC66h4HZxCrUbj6f60uIGe6aA==
 
-"@tensorflow/tfjs-backend-cpu@3.0.0":
+"@tensorflow/tfjs-backend-cpu@3.0.0", "@tensorflow/tfjs-backend-cpu@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@tensorflow/tfjs-backend-cpu/-/tfjs-backend-cpu-3.0.0.tgz#73463192bd6965624260641a909fd273a7b0fa11"
   integrity sha512-W7IX+xga007cYiFmq+QpEuDCy8SK+fsiVwawfjMFN+Dfs2FFi7JW6cHCLun/SQ5WC7dTWOhJVTwCaSBWQz6bjw==

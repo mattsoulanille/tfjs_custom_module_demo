@@ -23,6 +23,7 @@
         "NonMaxSuppressionV3"
     ],
     "backends": [
+        "cpu",
         "webgl"
     ],
     "models": [
