@@ -65,10 +65,9 @@ function getPlugins(options) {
   return plugins;
 }
 
-function makeBundle(useCustomTfjs) {
-  const outputPath = useCustomTfjs ? 'dist/custom' : 'dist/full';
+function makeBundle(useCustomTfjs, input, outputPath) {
   return {
-    input: 'index.js',
+    input,
     output: {
       file: `${outputPath}/index_rollup.js`,
       sourcemap,
@@ -89,6 +88,8 @@ function makeBundle(useCustomTfjs) {
 }
 
 module.exports = [
-  makeBundle(true /* use custom tfjs */),
-  makeBundle(false /* don't use custom tfjs */),
+  makeBundle(true /* use custom tfjs */, 'index.js', 'dist/custom'),
+  makeBundle(false /* don't use custom tfjs */, 'index_modularized.js',
+	     'dist/modularized'),
+  makeBundle(false /* don't use custom tfjs */, 'index.js', 'dist/full'),
 ];

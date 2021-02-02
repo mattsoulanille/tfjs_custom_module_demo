@@ -16,7 +16,8 @@
  */
 
 import * as blazeface from '@tensorflow-models/blazeface';
-import * as tf from '@tensorflow/tfjs';
+import * as tf from '@tensorflow/tfjs-core';
+import '@tensorflow/tfjs-backend-webgl';
 
 const stats = new Stats();
 stats.showPanel(0);
