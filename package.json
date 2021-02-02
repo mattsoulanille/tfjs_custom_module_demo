@@ -1,5 +1,5 @@
 {
-  "name": "custom_module_demo",
+  "name": "tfjs_custom_module_demo",
   "version": "1.0.0",
   "main": "index.js",
   "license": "Apache-2.0",
