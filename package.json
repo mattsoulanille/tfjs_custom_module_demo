@@ -1,0 +1,26 @@
+{
+  "name": "custom_module_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "scripts": {
+    "make-custom-tfjs-modules": "node ./node_modules/@tensorflow/tfjs/dist/tools/custom_module/cli.js --config index_tfjs_config.json",
+    "serve": "yarn make-custom-tfjs-modules && rollup -c"
+  },
+  "dependencies": {
+    "@tensorflow-models/blazeface": "^0.0.6",
+    "@tensorflow/tfjs-backend-wasm": "^3.0.0",
+    "@tensorflow/tfjs-converter": "^3.0.0",
+    "@tensorflow/tfjs-core": "^3.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.2",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "@tensorflow/tfjs": "^3.0.0",
+    "rollup": "^2.38.4",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-visualizer": "^4.2.0"
+  }
+}
